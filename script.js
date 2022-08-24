@@ -6,3 +6,7 @@ while(random.length < 10){
 }
 
 console.log(random)
+
+random.sort(function(a, b){return a-b});
+
+console.log(random)
