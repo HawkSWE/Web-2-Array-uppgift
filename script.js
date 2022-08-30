@@ -1,7 +1,7 @@
-function sort(nummer){
+function sort(){
 
     const sorterad_p = document.getElementById('sorterad')
-    nummer.sort(function(a, b){return a-b});
+    random.sort(function(a, b){return a-b});
     sorterad_p.innerText = random.join(', ')
 }
 
@@ -20,4 +20,4 @@ var random = [10];
 
 get_numbers();
 
-sort(random);
+sort();
