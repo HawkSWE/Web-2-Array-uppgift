@@ -5,15 +5,19 @@ function sort(nummer){
     sorterad_p.innerText = random.join(', ')
 }
 
-var random = [10];
+function get_numbers(){
 
-while(random.length < 10){
-    var r = Math.floor(Math.random() * 100) + 1;
-    if (random.indexOf(r) === -1) random.push(r);
+    while(random.length < 10){
+        var r = Math.floor(Math.random() * 100) + 1;
+        if (random.indexOf(r) === -1) random.push(r);
+    }
+
+    const osorterad_p = document.getElementById('osorterad')
+    osorterad_p.innerText = random.join(', ')
 }
 
-const osorterad_p = document.getElementById('osorterad')
+var random = [10];
 
-osorterad_p.innerText = random.join(', ')
+get_numbers();
 
 sort(random);
