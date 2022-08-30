@@ -1,3 +1,10 @@
+function sort(nummer){
+
+    const sorterad_p = document.getElementById('sorterad')
+    nummer.sort(function(a, b){return a-b});
+    sorterad_p.innerText = random.join(', ')
+}
+
 var random = [10];
 
 while(random.length < 10){
@@ -5,8 +12,8 @@ while(random.length < 10){
     if (random.indexOf(r) === -1) random.push(r);
 }
 
-console.log(random)
+const osorterad_p = document.getElementById('osorterad')
 
-random.sort(function(a, b){return a-b});
+osorterad_p.innerText = random.join(', ')
 
-console.log(random)
+sort(random);
