@@ -12,6 +12,7 @@ function get_numbers(){
         var r = Math.floor(Math.random() * 100) + 1;
         // Den här if satsen kollar om en random siffra redan finns i arrayn så det inte blir fler av samma siffra.
         if (random.indexOf(r) === -1) random.push(r);
+
     }
 
     const osorterad_p = document.getElementById('osorterad')
