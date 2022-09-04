@@ -13,6 +13,9 @@ function get_numbers(){
         // Den här if satsen kollar om en random siffra redan finns i arrayn så det inte blir fler av samma siffra.
         if (random.indexOf(r) === -1) random.push(r);
 
+        else{
+            console.log(r + " Fanns redan i arrayen!")
+        }
     }
 
     const osorterad_p = document.getElementById('osorterad')
